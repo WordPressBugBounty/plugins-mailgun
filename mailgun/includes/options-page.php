@@ -129,10 +129,10 @@ try {
                     <td>
                         <ul>
                             <li>
-                                <b>Click tracking</b> &mdash; <?php echo $settings['tracking']['open']['active'] == 1 ? 'Yes' : 'No'?>
+                                <b>Click tracking</b> &mdash; <?php echo $settings['tracking']['click']['active'] == 1 ? 'Yes' : 'No'?>
                             </li>
                             <li>
-                                <b>Open tracking</b> &mdash;  <?php echo $settings['tracking']['click']['active'] == 1 ? 'Yes' : 'No'?>
+                                <b>Open tracking</b> &mdash;  <?php echo $settings['tracking']['open']['active'] == 1 ? 'Yes' : 'No'?>
                             </li>
                             <li>
                                 <b>Unsubscribes</b> &mdash; <?php echo $settings['tracking']['unsubscribe']['active'] == 1 ? 'Yes' : 'No'?>
@@ -206,7 +206,7 @@ try {
                 <td>
                     <input type="password" class="regular-text" name="mailgun[apiKey]"
                             value="<?php esc_attr_e($mailgun_api_key); ?>"
-                            placeholder="key-3ax6xnjp29jd6fds4gc373sgvjxteol0"
+                            placeholder="your_api_key_here"
                         <?php echo $mailgun_api_key_const ? 'readonly="readonly"' : ''; ?>
                     />
                     <p class="description">
