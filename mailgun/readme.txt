@@ -10,8 +10,9 @@ License: GPLv2 or later
 
 Easily send email from your WordPress site through Mailgun using the HTTP API or SMTP.
 
-
 == Description ==
+
+**Security notice: versions 2.2.0 and earlier contain fixed vulnerabilities (unauthenticated arbitrary list subscription, weak SHA-1/MD5 hashing). We strongly recommend updating to the latest version immediately.**
 
 [Mailgun](http://www.mailgun.com/) is the email automation engine trusted by over 10,000 website and application developers for sending, receiving and tracking emails. By taking advantage of Mailgun's powerful email APIs, developers can spend more time building awesome websites and less time fighting with email servers. Mailgun supports all of the most popular languages including PHP, Ruby, Python, C# and Java.
 
@@ -126,6 +127,11 @@ MAILGUN_TRACK_OPENS  Type: string Choices: 'yes' or 'no'
 4. Setting up a Subscription Widget
 5. Using a Subscription Code
 6. Subscription Form Seen By Site Visitors
+
+== Upgrade Notice ==
+
+= 2.2.3 =
+Security: versions 2.2.0 and earlier are vulnerable to unauthenticated arbitrary list subscription (fixed in 2.2.1) and use weak SHA-1/MD5 hashing (fixed in 2.2.2). If you are running 2.2.0 or older, update immediately.
 
 == Changelog ==
 
